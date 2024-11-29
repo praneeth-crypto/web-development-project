@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Clothing - FrescoShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">FrescoShop</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mens.html">Men</a></li>
+                <li><a href="womens.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <h2>Women's Clothing</h2>
+        <div class="product-grid">
+            <div class="product-card" data-name="Women's Dress" data-price="79.99">
+                <img src="https://via.placeholder.com/300" alt="Women's Dress">
+                <h3>Women's Dress</h3>
+                <p>$79.99</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Women's T-Shirt" data-price="29.99">
+                <img src="https://via.placeholder.com/300" alt="Women's T-Shirt">
+                <h3>Women's T-Shirt</h3>
+                <p>$29.99</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Women's Jacket" data-price="89.99">
+                <img src="https://via.placeholder.com/300" alt="Women's Jacket">
+                <h3>Women's Jacket</h3>
+                <p>$89.99</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 FrescoShop. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - FrescoShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">FrescoShop</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mens.html">Men</a></li>
+                <li><a href="womens.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li> <!-- Add this link -->
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section class="checkout-section">
+        <h2>Checkout</h2>
+
+        <div id="checkout-summary">
+            <!-- Cart items will be dynamically displayed here -->
+        </div>
+
+        <div class="shipping-form">
+            <h3>Shipping Information</h3>
+            <form id="checkout-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" required></textarea>
+
+                <label for="payment">Payment Method:</label>
+                <select id="payment" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cash on delivery">cash on delivery</option>
+                </select>
+
+                <button type="submit" class="cta-button" id="submit-order">Place Order</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 FrescoShop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
